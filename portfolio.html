@@ -18,6 +18,13 @@
     <!-- Шапка -->
     <header class="header">
         <div class="container main-nav">
+
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="burger-menu">
+                    <use href="./images/sprite.svg#icon-menu_burger"></use>
+                </svg>
+            </button>
+
             <nav class="main-nav">
                 <a href="/index.html" class="logo">Web<span class="logo-part">Studio</span></a>
                 <ul class="site-nav">
@@ -45,6 +52,42 @@
                 </li>
             </ul>
         </div>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="close-burger-menu">
+                    <use href="./images/sprite.svg#icon-close_menu_burger"></use>
+                </svg>
+            </button>
+            <ul class="mobile-nav">
+                <li class="mobile-nav__item"><a class="mobile-nav__link"
+                        href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-nav__item"><a class="mobile-nav__link" href="">Контакты</a></li>
+            </ul>
+        
+            <ul class="mobile-contacts">
+                <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link" href="tel:+380961111111">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+                <li class="mobile-contacts__item">
+                    <a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+                        info@devstudio.com
+                    </a>
+                </li>
+            </ul>
+            <ul class="mobile-socials">
+                <li class="mobile-socials__item"><a href="instagram.com" class="mobile-socials__link">Instagram</a></li>
+                <li class="mobile-socials__item"><a href="twitter.com" class="mobile-socials__link">Twitter</a></li>
+                <li class="mobile-socials__item"><a href="facebook.com" class="mobile-socials__link">Facebook</a></li>
+                <li class="mobile-socials__item"><a href="linkedin.com" class="mobile-socials__link">LinkedIn</a></li>
+            </ul>
+        </div>
+
     </header>
 
     <!-- Портфолио -->
