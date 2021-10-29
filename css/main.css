@@ -774,11 +774,21 @@ ul {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    padding-bottom: 94px;
+  }
+}
+
 .work__title {
   margin-top: 0;
   margin-bottom: 50px;
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
