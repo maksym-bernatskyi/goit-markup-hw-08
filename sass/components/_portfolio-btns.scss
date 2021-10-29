@@ -1,14 +1,39 @@
+.cards-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .buttons {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 480px) {
+    justify-content: start;
+  }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
-.buttons__item:not(:last-child) {
-  margin-right: 8px;
+
+.buttons__item {
+  margin-left: 8px;
+  margin-bottom: 15px;
 }
+
 .buttons__btn {
+  display: inline-block;
   padding: 6px 22px;
-  font-family: Roboto;
+  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
