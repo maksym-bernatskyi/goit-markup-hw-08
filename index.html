@@ -90,14 +90,14 @@
 
 <main>
     <!-- Герой -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
         <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
-    </div> -->
+    </div>
 
     <!-- Модальное окно -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal__button-close" type="button" data-modal-close>
                 <svg class="modal__icon-close">
@@ -141,11 +141,11 @@
                 <button class="modal-button" type="submit">Отправить</button>
                 </form>
         </div>
-    </div> -->
+    </div>
 
-    <!-- </section> -->
+    </section>
        <!-- Наши преимущества -->
-    <!-- <section class="benefits section">
+    <section class="benefits section">
         <div class="container">
     <ul class="benefits-list">
         <li class="benefits-item">
@@ -186,7 +186,7 @@
         </li>
     </ul>
     </div>
-</section> -->
+</section>
 
     <!-- Чем мы занимаемся -->
 <section class="work">
@@ -222,13 +222,21 @@
 </section>
 
     <!-- Наша команда -->
-<!-- <section class="team section">
+<section class="team section">
     <div class="container">
     <h3 class="team__title">Наша команда</h3>
     <ul class="team-list">
 
     <li class="team-item">
-        <img src="./images/photo1.jpg" alt="product-desinger-photo" width="270" class="img">
+<picture>
+    <source srcset="./images/mobile/min/igor-min.jpg, ../images/mobile/min/igor@2x-min.jpg" media="(max-width: 767px)"
+        sizes="(min-width: 450px) 450px, 100vw">
+    <source srcset="./images/tablet/min/igor-min.jpg, ../images/tablet/min/igor@2x-min.jpg" media="(min-width: 768px)"
+        sizes="(max-width: 354px) 354px, 100vw">
+    <source srcset="./images/desktop/min/igor-min.jpg, ../images/desktop/min/igor@2x-min.jpg" media="(min-width: 1200px)"
+        sizes="(max-width: 270px) 270px, 100vw">
+    <img class="img" src="./images/igor.jpg" alt="Игорь Демьяненко" />
+</picture>
         <h4 class="team-item__member">Игорь Демьяненко</h4>
         <p lang="en" class="team-item__profession">Product Designer</p>
         <ul class="team-social list">
@@ -264,7 +272,15 @@
     </li>
 
     <li class="team-item">
-        <img src="./images/photo2.jpg" alt="frontend-developer-photo" width="270" class="img">
+<picture>
+    <source srcset="./images/mobile/min/olga-min.jpg, ../images/mobile/min/olga@2x-min.jpg" media="(max-width: 767px)"
+        sizes="(min-width: 450px) 450px, 100vw">
+    <source srcset="./images/tablet/min/olga-min.jpg, ../images/tablet/min/olga@2x-min.jpg" media="(min-width: 768px)"
+        sizes="(max-width: 354px) 354px, 100vw">
+    <source srcset="./images/desktop/olga-min.jpg, ../images/desktop/olga@2x-min.jpg" media="(min-width: 1200px)"
+        sizes="(max-width: 270px) 270px, 100vw">
+    <img class="img" src="./images/olga.jpg" alt="Ольга Репина" />
+</picture>
         <h4 class="team-item__member">Ольга Репина</h4>
         <p lang="en" class="team-item__profession">Frontend Developer</p>
         <ul class="team-social list">
@@ -300,7 +316,15 @@
     </li>
 
     <li class="team-item">
-        <img src="./images/photo3.jpg" alt="marketing-manager-photo" width="270" class="img">
+<picture>
+    <source srcset="./images/mobile/min/nikolay-min.jpg, ../images/mobile/min/nikolay@2x-min.jpg" media="(max-width: 767px)"
+        sizes="(min-width: 450px) 450px, 100vw">
+    <source srcset="./images/tablet/min/nikolay-min.jpg, ../images/tablet/min/nikolay@2x-min.jpg" media="(min-width: 768px)"
+        sizes="(max-width: 354px) 354px, 100vw">
+    <source srcset="./images/desktop/min/nikolay-min.jpg, ../images/desktop/min/nikolay@2x-min.jpg" media="(min-width: 1200px)"
+        sizes="(max-width: 270px) 270px, 100vw">
+    <img class="img" src="./images/nikolay.jpg" alt="Николай Тарасов" />
+</picture>
         <h4 class="team-item__member">Николай Тарасов</h4>
         <p lang="en" class="team-item__profession">Marketing</p>
         <ul class="team-social list">
@@ -336,7 +360,15 @@
     </li>
 
     <li class="team-item">
-        <img src="./images/photo4.jpg" alt="ui-designer-photo" width="270" class="img">
+<picture>
+    <source srcset="./images/mobile/min/michael-min.jpg, ../images/mobile/min/michael@2x-min.jpg" media="(max-width: 767px)"
+        sizes="(min-width: 450px) 450px, 100vw">
+    <source srcset="./images/tablet/min/michael-min.jpg, ../images/tablet/min/michael@2x-min.jpg" media="(min-width: 768px)"
+        sizes="(max-width: 354px) 354px, 100vw">
+    <source srcset="./images/desktop/min/michael-min.jpg, ../images/desktop/min/michael@2x-min.jpg" media="(min-width: 1200px)"
+        sizes="(max-width: 270px) 270px, 100vw">
+    <img class="img" src="./images/michael.jpg" alt="Михаил Ермаков" />
+</picture>
         <h4 class="team-item__member">Михаил Ермаков</h4>
         <p lang="en" class="team-item__profession">UI Designer</p>
         <ul class="team-social list">
@@ -372,10 +404,10 @@
     </li>
     </ul>
     </div>
-    </section> -->
+    </section>
 
     <!-- Постоянные клиенты -->
-<!-- <section class="clients section">
+<section class="clients section">
     <div class="container">
         <h3 class="clients__title">Постоянные клиенты</h3>
         <ul class="clients-list">
@@ -435,7 +467,7 @@
             </li>
         </ul>
     </div>
-    </section> -->
+    </section>
 </main>
 
     <!-- Подвал -->
