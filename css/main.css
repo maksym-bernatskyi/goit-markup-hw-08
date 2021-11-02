@@ -80,48 +80,99 @@ ul {
 }
 
 .header {
-  max-height: 80px;
-  margin: 0;
   border-bottom: 1px solid #ececec;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .header__container {
+    position: relative;
+  }
 }
 
 .main-nav {
   display: flex;
-  align-content: center;
-  align-self: center;
-  justify-content: center;
 }
 
 .logo {
-  align-self: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  color: var(--accent-color);
+  display: inline-block;
   text-decoration: none;
-  font-style: normal;
+  font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  font-family: Raleway;
+  color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+  }
 }
 
 .logo-part {
   color: var(--primary-text-color);
 }
 
+.site-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .site-nav {
+    margin-left: 88px;
+  }
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav__link {
   display: block;
+  text-decoration: none;
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -130,7 +181,6 @@ ul {
 }
 
 .site-nav__link.current {
-  position: relative;
   color: var(--accent-color);
 }
 
@@ -145,37 +195,50 @@ ul {
   border-radius: 2px;
 }
 
-.site-nav {
-  display: flex;
-  margin-left: 93px;
-}
-
-.site-nav__item {
-  margin-right: 50px;
-}
-
-.site-nav__item:last-child {
-  margin-right: 0;
-}
-
 .contacts-nav {
-  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
   margin-left: auto;
-  align-self: center;
 }
 
-.contacts-nav__item + .contacts-nav__item {
-  margin-left: 50px;
+@media screen and (max-width: 767px) {
+  .contacts-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .contacts-nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-nav {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-nav__item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-nav__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .contacts-nav__link {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--secondary-text-color);
-  font-family: Roboto;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -186,6 +249,13 @@ ul {
 
 .contacts-nav__link:hover, .contacts-nav__link:focus {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .contacts-nav__header-icon {
@@ -249,7 +319,22 @@ ul {
 .close-burger-menu {
   width: 25px;
   height: 16px;
-  fill: currentColor;
+  fill: var(--primary-text-color);
+}
+
+.container__mobile-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+@media screen and (max-width: 479px) {
+  .container__mobile-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .mobile-nav {
@@ -312,9 +397,9 @@ ul {
   list-style: none;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 479px) {
   .mobile-contacts {
-    margin-top: 10px;
+    margin-bottom: 40px;
   }
 }
 
@@ -495,8 +580,8 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: 5;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -508,12 +593,14 @@ ul {
   pointer-events: none;
 }
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  min-height: 581px;
   padding: 40px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -522,8 +609,23 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.7);
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 80%;
+    height: 70%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal__button-close {
@@ -533,9 +635,6 @@ ul {
   width: 30px;
   height: 30px;
   margin: 8px 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
@@ -544,8 +643,8 @@ ul {
 }
 
 .modal__icon-close {
-  width: 18px;
-  height: 18px;
+  width: 11px;
+  height: 11px;
   fill: #000000;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -567,13 +666,12 @@ ul {
 .modal__form {
   display: flex;
   flex-direction: column;
-  width: 448px;
 }
 
 .modal-label {
   display: block;
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -702,6 +800,12 @@ ul {
 
 .modal-button:hover, .modal-button:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 479px) {
+  .modal-button {
+    width: 150px;
+  }
 }
 
 @media screen and (max-width: 480px) {
