@@ -68,6 +68,7 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
 .team-item__profession {
   margin-top: 0;
   margin-bottom: 0;
@@ -81,14 +82,17 @@
 
 .team-social {
   display: flex;
+  justify-content: center;
   padding: 16px 32px 30px 32px;
 }
+
 .team-social__item {
   margin-right: 10px;
   &:last-child {
     margin-right: 0;
   }
 }
+
 .team-social__link {
   display: inline-flex;
   align-items: center;
@@ -103,6 +107,7 @@
     background-color: var(--accent-color);
   }
 }
+
 .team-social__icon {
   fill: var(--secondary-text-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);

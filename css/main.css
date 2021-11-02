@@ -47,8 +47,6 @@ ul {
 @media screen and (max-width: 767px) {
   .container {
     width: 450px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 
@@ -67,6 +65,13 @@ ul {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .img {
@@ -98,6 +103,7 @@ ul {
 
 .main-nav {
   display: flex;
+  position: relative;
 }
 
 .logo {
@@ -316,6 +322,14 @@ ul {
   .menu-toggle {
     display: none;
   }
+}
+
+.burger-menu {
+  width: 25px;
+  height: 16px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
 }
 
 .close-burger-menu {
@@ -1068,6 +1082,7 @@ ul {
 
 .team-social {
   display: flex;
+  justify-content: center;
   padding: 16px 32px 30px 32px;
 }
 
