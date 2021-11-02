@@ -46,7 +46,20 @@
 .close-burger-menu {
   width: 25px;
   height: 16px;
-  fill: currentColor;
+  fill: var(--primary-text-color);
+}
+
+.container__mobile-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+
+  @media screen and (max-width: 479px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .mobile-nav {
@@ -106,8 +119,8 @@
   padding: 0;
   list-style: none;
 
-  @media screen and (max-width: 320px) {
-    margin-top: 10px;
+  @media screen and (max-width: 479px) {
+    margin-bottom: 40px;
   }
 }
 
