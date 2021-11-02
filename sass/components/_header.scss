@@ -18,6 +18,8 @@
 
 .logo {
   display: inline-block;
+  padding-top: 26px;
+  padding-bottom: 26px;
   text-decoration: none;
   font-family: Raleway;
   font-weight: 700;
@@ -52,8 +54,6 @@
 }
 
 .site-nav {
-  margin: 0;
-  padding: 0;
   list-style: none;
   display: flex;
 
@@ -104,8 +104,6 @@
 }
 
 .contacts-nav {
-  margin: 0;
-  padding: 0;
   list-style: none;
   margin-left: auto;
 
@@ -140,8 +138,6 @@
 .contacts-nav__link {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -158,6 +154,18 @@
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+}
+
+.contacts-nav__link--top {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 21px;
+  }
+}
+
+.contacts-nav__link--bottom {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 21px;
   }
 }
 
