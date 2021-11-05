@@ -86,10 +86,9 @@
   position: relative;
   display: inline-block;
   text-decoration: none;
-  font-family: null;
   font-size: 40px;
   font-weight: 500;
-  line-height: 1.18;
+  line-height: 0.85;
   letter-spacing: 0.02em;
   color: inherit;
 
@@ -136,18 +135,16 @@
   margin-bottom: 32px;
 }
 
-.mobile-contacts__link {
+.mobile-contacts__link--mob {
   display: block;
   text-decoration: none;
-  font-family: null;
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 500;
-  line-height: 1.16;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 
   @media screen and (max-width: 479px) {
-    font-family: null;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.18;
@@ -156,8 +153,25 @@
   }
 }
 
+.mobile-contacts__link--mail {
+  display: block;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+
+  @media screen and (max-width: 479px) {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+  }
+}
+
 .mobile-contacts__link--current {
-  font-family: null;
   font-size: 34px;
   font-weight: 500;
   line-height: 1.17;
@@ -165,7 +179,6 @@
   color: var(--accent-color);
 
   @media screen and (max-width: 479px) {
-    font-family: null;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.18;
@@ -196,6 +209,10 @@
 .mobile-socials__link {
   display: block;
   text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
   color: var(--accent-color);
   padding-left: 10px;
   padding-right: 10px;
