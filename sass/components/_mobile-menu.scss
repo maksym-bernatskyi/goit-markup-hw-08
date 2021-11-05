@@ -88,12 +88,11 @@
   text-decoration: none;
   font-size: 40px;
   font-weight: 500;
-  line-height: 0.85;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   color: inherit;
 
   @media screen and (max-width: 479px) {
-    font-family: null;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.18;
@@ -145,6 +144,7 @@
   color: var(--secondary-text-color);
 
   @media screen and (max-width: 479px) {
+    text-decoration: none;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.18;
@@ -163,6 +163,7 @@
   color: var(--secondary-text-color);
 
   @media screen and (max-width: 479px) {
+    text-decoration: none;
     font-size: 18px;
     font-weight: 500;
     line-height: 1.17;
